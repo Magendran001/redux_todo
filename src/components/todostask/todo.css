@@ -1,0 +1,96 @@
+.todo_task{
+  
+    width: 80%;
+    margin: 50px auto;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+}
+
+.todo_task>div{
+    border: 2px solid rgb(23, 23, 23);
+ 
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+
+}
+.user_details_todos_list>div{
+    
+    border: 1px solid black;
+    height: 100px;
+   
+}
+.user_details_todos_list>div:nth-child(3){
+     height: 200px;
+   
+}
+.user_details_todos_list>div:nth-child(2){
+   height: 200px;
+}
+.Category_task{
+    border: 2px solid red;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    
+}
+.Category_task>div{
+    border: 2px solid red;
+    width: 100%;
+    height: auto;
+    margin: 20px 20px 0px 20px;
+    
+   
+    
+}
+.todo_status_shown{
+    height: 50px;
+    border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.todo_status_shown+div>div{
+    
+    border: 1px solid black;
+    margin: 30px;
+    height: 200px;
+    
+   
+}
+.Newtodo_whole{
+   
+}
+.Newtodo_whole>div:nth-child(1){
+  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.Newtodo_whole>div:nth-child(1)>div{
+    border: 2px solid black;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+   .Todo_status_radio_checkbox{
+      
+       margin: 30px;
+       text-align: start;
+
+   }
+   .Todo_status_radio_checkbox{
+
+     
+}
+.update_todo_btn button{
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    
+}
