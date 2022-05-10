@@ -11,14 +11,14 @@ function Header()
  
      
 
-    let selector = useSelector((state) =>  state.authorisereducer.loginstatus);
+    let selector = useSelector((state) =>  state.authorisereducer.loginstatus)||"";
     console.log(selector,"headerselectors")
    
-    let [loginstatus,setloginstatus] = useState(false);
+    // let [loginstatus,setloginstatus] = useState(false);
 
 
   
-    let data = JSON.parse(localStorage.getItem("userdata"));
+    let data = JSON.parse(localStorage.getItem("userdata"))||[];
     console.log(data,"headerdatas")
 
           
@@ -30,14 +30,14 @@ function Header()
     
 
 
-    useEffect(()=>{
-        if(data.name)
-        {
+    // useEffect(()=>{
+    //     if(data.name)
+    //     {
            
-            setloginstatus(()=>{return selector})   
-        }
+    //         setloginstatus(()=>{return selector})   
+    //     }
 
-    },[selector])
+    // },[selector])
 
 
 

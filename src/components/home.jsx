@@ -5,7 +5,7 @@ import Usertodo from "./todostask/usertodo";
 function Home()
 {
  let [loginstatus,setloginstatus] = useState(false);
-     let data =JSON.parse( localStorage.getItem("userdata"));
+     let data =JSON.parse( localStorage.getItem("userdata"))||{};
      console.log(data);
 
      useEffect(()=>{
